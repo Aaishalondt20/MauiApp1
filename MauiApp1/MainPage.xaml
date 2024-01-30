@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="LightGray"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="mxit icon.jpeg"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="letter m in white and orange" />
+
+            <Label
+                Text="Welcome to MXit!"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level4" />
+
+            <Label Text="Log In"
+                   FontSize="50"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <Entry Keyboard="Text"
+                   Placeholder="Enter MXit ID" />
+
+
+            <Entry Keyboard="Text"
+                   Placeholder="Pin"
+                   IsPassword="True" />
+
+            <StackLayout Orientation=" Horizontal" HorizontalOptions="CenterAndExpand" Spacing="500">
+                <Button
+                 x:Name="Register"
+                 SemanticProperties.Hint="Tap to Register"
+                 Clicked="OnCounterClicked"
+                 HorizontalOptions="Start" 
+                 BorderColor="Black"
+                 FontSize="Large"
+                 TextColor="white"
+                 BackgroundColor="Black"/>
+
+                <Button
+                 x:Name="Login"
+                 SemanticProperties.Hint="Tap to Login"
+                 Clicked="OnCounterClicked"
+                 HorizontalOptions="End"
+                 BorderColor="Black"
+                 FontSize="Large"
+                 TextColor="White"
+                 BackgroundColor="Black"/>
+
+            </StackLayout>
+
+                
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
