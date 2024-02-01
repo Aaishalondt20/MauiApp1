@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="White"
+             x:Class="MauiApp1.UserCreation"
+             Title="UserCreation">
+    
+    <VerticalStackLayout>
+        <Label 
+            Text="Creating A Profile"
+            TextColor="Black"
+            FontSize="45"
+            FontAttributes="Bold"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Margin="12.5"/>
+
+        <Entry Keyboard="Text"
+               Placeholder="Enter First Name"
+               VerticalOptions="CenterAndExpand"
+               Margin="12.5"/>
+
+        <Entry Keyboard="Text"
+               Placeholder="Enter Last Name"
+               VerticalOptions="CenterAndExpand"
+               Margin="12.5"/>
+
+        <Entry Keyboard="Text"
+                Placeholder="Cellphone Number"
+                VerticalOptions="CenterAndExpand"
+               Margin="12.5"/>
+
+        <Entry Keyboard="Text"
+               Placeholder="Email Address"
+               VerticalOptions="CenterAndExpand"
+               Margin="12.5"/>
+
+        <Entry Keyboard="Text"
+               Placeholder="Create Password"
+               IsPassword="True"
+               VerticalOptions="CenterAndExpand"
+               Margin="12.5"/>
+
+        <Entry Keyboard="Text"
+               Placeholder="Confirm Password"
+               VerticalOptions="CenterAndExpand"
+               Margin="12.5"/>
+
+        <Button 
+            x:Name="Proceed"
+            SemanticProperties.Hint="Proceed"
+            Clicked="Proceed_Clicked"
+            HorizontalOptions="CenterAndExpand"
+            BorderColor="Black"
+            HeightRequest="50"
+            WidthRequest="100"
+            Text="Proceed"
+            Margin="-50,0,0,0"
+            FontSize="Small"
+            TextColor="White"
+            BackgroundColor="Black"/>
+
+
+
+    </VerticalStackLayout>
+</ContentPage>

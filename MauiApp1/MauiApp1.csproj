@@ -40,11 +40,12 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\mxit_icon.svg" Color="White" BaseSize="50,100" />
+		<MauiIcon Include="Resources\AppIcon\mxit.svg" backgroundfile="Resources\AppIcon\appiconfg.svg" />
+
+
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
-
+		<MauiSplashScreen Include="Resources\Splash\mxit_splash.svg" Color="White" />
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
 
@@ -61,15 +62,44 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\AppIcon\mxit.svg" />
+	  <None Remove="Resources\AppIcon\mxit_icon.svg" />
+	  <None Remove="Resources\Contacts\blue_sphere.jpeg" />
+	  <None Remove="Resources\Contacts\envelope.jpeg" />
+	  <None Remove="Resources\Contacts\green_sphere.jpeg" />
+	  <None Remove="Resources\Contacts\network.jpeg" />
+	  <None Remove="Resources\Contacts\red_sphere.jpeg" />
+	  <None Remove="Resources\Images1\mxit_logo.jpeg" />
 	  <None Remove="Resources\Images\dotnet_bot.png" />
 	  <None Remove="Resources\Images\mxit icon.jpeg" />
 	  <None Remove="Resources\Images\mxit_icon.svg" />
+	  <None Remove="Resources\Splash\mxit_splash.svg" />
+	  <None Remove="Resources\Splash\splash_page.svg" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <MauiImage Include="Resources\Contacts\blue_sphere.jpeg" />
+	  <MauiImage Include="Resources\Contacts\envelope.jpeg" />
+	  <MauiImage Include="Resources\Contacts\green_sphere.jpeg" />
+	  <MauiImage Include="Resources\Contacts\network.jpeg" />
+	  <MauiImage Include="Resources\Contacts\red_sphere.jpeg" />
+	  <MauiImage Include="Resources\Images1\mxit_logo.jpeg" />
+	</ItemGroup>
+
+	
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="MxitChat.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="UserCreation.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
