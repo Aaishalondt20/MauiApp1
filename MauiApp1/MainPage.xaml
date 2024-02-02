@@ -40,8 +40,9 @@
                  HorizontalOptions="Start" 
                  BorderColor="Black"
                  FontSize="Large"
-                 TextColor="white"
-                 BackgroundColor="Black"/>
+                 FontAttributes="Bold"
+                 TextColor="Black"
+                 BackgroundColor="Gray"/>
 
                 <Button
                  x:Name="Login"
@@ -50,8 +51,9 @@
                  HorizontalOptions="End"
                  BorderColor="Black"
                  FontSize="Large"
-                 TextColor="White"
-                 BackgroundColor="Black"/>
+                 FontAttributes="Bold"
+                 TextColor="Black"
+                 BackgroundColor="Gray"/>
 
             </StackLayout>
 
