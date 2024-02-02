@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             BackgroundColor="LightGray"
+             BackgroundColor="White"
              x:Class="MauiApp1.MainPage">
 
     <ScrollView>
@@ -9,18 +9,28 @@
             Padding="30,0"
             Spacing="25">
             <Image
-                Source="mxit icon.jpeg"
+                Source="mxit_logo.jpeg"
                 HeightRequest="185"
                 Aspect="AspectFit"
                 SemanticProperties.Description="letter m in white and orange" />
 
             <Label
                 Text="Welcome to MXit!"
+                TextColor="Black"
+                FontAttributes="Bold"
                 Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level4" />
+                SemanticProperties.HeadingLevel="Level5" />
+
+            <Label
+                Text="Join The Evolution"
+                TextColor="Black"
+                FontSize="20"
+                HorizontalOptions="Center" />
+
 
             <Label Text="Log In"
-                   FontSize="50"
+                   TextColor="Black"
+                   FontSize="20"
                    FontAttributes="Bold"
                    HorizontalOptions="Center" />
 
@@ -39,22 +49,27 @@
                  Clicked="OnCounterClicked"
                  HorizontalOptions="Start" 
                  BorderColor="Black"
-                 FontSize="Large"
-                 FontAttributes="Bold"
-                 TextColor="Black"
-                 BackgroundColor="Gray"/>
+                 HeightRequest="50"
+                 WidthRequest="150"
+                 Text="Register"
+                 FontSize="Medium"
+                 TextColor="white"
+                 BackgroundColor="Black"/>
 
                 <Button
                  x:Name="Login"
                  SemanticProperties.Hint="Tap to Login"
-                 Clicked="OnCounterClicked"
+                 Clicked="Login_Clicked"
                  HorizontalOptions="End"
                  BorderColor="Black"
-                 FontSize="Large"
-                 FontAttributes="Bold"
-                 TextColor="Black"
-                 BackgroundColor="Gray"/>
-
+                 HeightRequest="50"
+                 WidthRequest="150"
+                 Text="Login"
+                 Margin="-200,0,0,0"
+                 FontSize="Medium"
+                 TextColor="White"
+                 BackgroundColor="Black"/>
+                  
             </StackLayout>
 
                 
